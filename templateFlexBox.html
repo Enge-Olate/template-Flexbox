@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+	<html lang = "pt-br">
+		<head>
+			<title>Template FlexBox</title>
+			<meta charset = "utf-8">
+			<meta name = "viewport" content = "width = device-width, initial-scale = 1">	
+		</head>
+			<style>
+				*{
+					box-sizing : border-box;
+				}
+				body{
+					font-family : Arial, Helvetica, sans-serif;
+				}
+				/*Estilo do cabeçalho*/
+				.cabecalho{
+					background-color : #3f51b5;
+					padding : 30px;
+					text-align : center;
+					font-size : 35px;
+				}
+				/*Container para flexibilizar caixas*/
+				.fileirasColunas{
+					display : -webkit-flex;
+					display : flex;
+				}	
+				.coluna1{
+					-webkit-flex : 1;
+					-ms-flex : 1;
+					flex : 1;
+					padding : 10px;
+					height : 300px;
+					background-color : #e8c714;
+				}
+				.coluna2{
+					-webkit-flex : 1;
+					-ms-flex : 1;
+					flex : 1;
+					padding : 10px;
+					height : 300px;
+					background-color : #0f4c4c;
+				}
+				.coluna3{
+					-webkit-flex : 1;
+					-ms-flex : 1;
+					flex : 1;
+					padding : 10px;
+					height : 300px;
+					background-color : #6f75b4;
+				}	
+				.rodape{
+					background-color : #00447c;
+					padding : 10px;
+					text-align : center;
+										
+				}
+				@media(max-width : 600px){
+					.fileirasColunas{
+						-webkit-flex-direction : column;
+						flex-direction : column;
+					}
+				}	
+
+			</style>			
+				<body>
+					<div class = "cabecalho">
+						<header>
+							<h3>Currículo</h3>
+						</header>
+					</div>
+						<div class = "fileirasColunas">
+							<div class = "coluna1">Sobre Mim</div>
+							<div class = "coluna2">Experiência Profissional</div>	
+							<div class = "coluna3">Educação</div>
+						</div>
+					<footer>
+						<div class = "rodape">
+							<h3>Endereço/Contatos</h3>
+						</div>	
+					</footer>				
+				</body>
+	</html>
